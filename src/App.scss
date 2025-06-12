@@ -1,0 +1,111 @@
+body{
+  min-width: 240px
+}
+.wrapper {
+  width : 240px;
+  padding : 16px;
+  background : #F5F7FA;
+  border-radius : 16px;
+  .title {
+    color : #0F294D;
+    font-size : 16px;
+    line-height : 21px;
+    font-weight : 500;
+    margin : 0 auto 12px;
+  }
+  .img-box {
+    width : 240px;
+    height : 240px;
+    line-height : 240px;
+    text-align : center;
+    padding : 10px;
+    font-size : 0;
+    margin-top : 20px;
+    box-sizing : border-box;
+    img {
+      object-fit : cover;
+    }
+  }
+  .input-box {
+    display : flex;
+    justify-content : center;
+  }
+  textarea {
+    flex : 1;
+    resize : none;
+    border : none;
+    line-height : 18px;
+    padding : 12px;
+    border-radius : 4px;
+    color : #051A37;
+    font-size : 14px;
+  }
+  .submit-box {
+    width : 100%;
+    border-radius : 4px;
+    overflow : hidden;
+    margin-top : 20px;
+    button {
+      border : none;
+      outline : none;
+      width : 100%;
+      line-height : 44px;
+      background : #3264FF;
+      color : #FFFFFF;
+      font-size : 16px;
+      font-weight : 500;
+      border : none;
+      display : block;
+      padding : 0;
+      &.submit {
+        margin-top : 8px;
+      }
+      &.disabled {
+        background : #CED2D9;
+      }
+    }
+  }
+  @keyframes show {
+    0% {
+      opacity : 0;
+    }
+
+    100% {
+      opacity : 1;
+    }
+  }
+
+  @keyframes hide {
+    0% {
+      opacity : 1;
+    }
+
+    100% {
+      opacity : 0;
+    }
+  }
+
+  .toast_box {
+    /* width: 100%; */
+    position : absolute;
+    bottom : 50%;
+    left : 50%;
+    /* justify-content: center; */
+    z-index : 10;
+    transform : translate(-50%, -50%);
+    display : none;
+  }
+
+  .toast_box p {
+    box-sizing : border-box;
+    padding : 10px 20px;
+    width : max-content;
+    /* 提示框的背景色 */
+    background : #707070;
+    color : #FFFFFF;
+    font-size : 16px;
+    text-align : center;
+    border-radius : 6px;
+    opacity : .8;
+  }
+}
